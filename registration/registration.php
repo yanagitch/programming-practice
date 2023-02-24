@@ -15,7 +15,6 @@
             <form method = "post" action = "confirm.php">
                 <div>
                     <label>名前（姓）</label>
-                    <?php echo $_POST['family_name']; ?>
                     <input type = "text" pattern= "[\u4E00-\u9FFF\u3040-\u309F-]*" class = "text" size = "35" maxlength = "10" name = "family_name" required
                     value = "<?php if(!empty($_POST['family_name'])){
                         echo $_POST['family_name'];
@@ -23,7 +22,6 @@
                 </div>
                 <div>
                     <label>名前（名）</label>
-                    <?php echo $_POST['last_name']; ?>
                     <input type = "text" pattern = "[\u4E00-\u9FFF\u3040-\u309F-]*" class = "text" size = "35" maxlength = "10" name = "last_name"  required
                     value = "<?php if(!empty($_POST['last_name'])){
                         echo $_POST['last_name'];
@@ -31,7 +29,6 @@
                 </div>
                 <div>
                     <label>カナ（姓）</label>
-                    <?php echo $_POST['family_name_kana']; ?>
                     <input type = "text" pattern="[\u30A1-\u30F6]*" class = "text" size = "35" maxlength = "10" name = "family_name_kana"  required
                     value = "<?php if(!empty($_POST['family_name_kana'])){
                         echo $_POST['family_name_kana'];
@@ -39,7 +36,6 @@
                 </div>
                 <div>
                     <label>カナ（名）</label>
-                    <?php echo $_POST['last_name_kana']; ?>
                     <input type = "text" pattern="[\u30A1-\u30F6]*" class = "text" size = "35" maxlength = "10" name = "last_name_kana"  required
                     value = "<?php if(!empty($_POST['last_name_kana'])){
                         echo $_POST['last_name_kana'];
@@ -47,7 +43,6 @@
                 </div>
                 <div>
                     <label>メールアドレス</label>
-                    <?php echo $_POST['mail']; ?>
                     <input type = "email"  class = "text" size = "35" maxlength = "100" name = "mail"  required
                     value = "<?php if(!empty($_POST['mail'])){
                         echo $_POST['mail'];
@@ -67,15 +62,13 @@
                 </div> 
                 <div>
                     <label>郵便番号</label>
-                    <?php echo $_POST['postalcode']; ?>
-                    <input type = "text" pattern = "^[0-9A-Za-z]+$" class = "text" size = "25" maxlength = "7" name = "postalcode"  required
-                    value = "<?php if(!empty($_POST['postalcode'])){
-                        echo $_POST['postalcode'];
+                    <input type = "text" pattern = "^[0-9A-Za-z]+$" class = "text" size = "25" maxlength = "7" name = "postal_code"  required
+                    value = "<?php if(!empty($_POST['postal_code'])){
+                        echo $_POST['postal_code'];
                     }?>">
                 </div>
                 <div>
                     <label>住所（都道府県）</label>
-                    <?php echo $_POST['prefecture']; ?>
                     <select required name = "prefecture"  required>
                         <option></option> <option>北海道</option>
                         <option>青森県</option> <option>岩手県</option>
@@ -105,30 +98,27 @@
                 </div>
                     <div>
                         <label>住所（市区町村)</label>
-                        <?php echo $_POST['address_1']; ?> 
-                        <input type = "text" class = "text" size = "35" maxlength = "10" name = "address_1"  required
+                        <input type = "text" pattern = "[\u4E00-\u9FFF\u30A1-\u30FF\u3041-\u309F\0-9\-\ ]"class = "text" size = "35" maxlength = "10" name = "address_1"  required
                         value = "<?php if(!empty($_POST['address_1'])){
                         echo $_POST['address_1'];
                     }?>">
                     </div>
                     <div>
                         <label>住所（番地）</label>
-                        <?php echo $_POST['address_2']; ?>
-                        <input type = "text"  class = "text" size = "35" maxlength = "100" name = "address_2"  required
+                        <input type = "text" pattern = "[\u4E00-\u9FFF\u30A1-\u30FF\u3041-\u309F\0-9\-\ ]" class = "text" size = "35" maxlength = "100" name = "address_2"  required
                         value = "<?php if(!empty($_POST['address_2'])){
                         echo $_POST['address_2'];
                     }?>">
                     </div>
                     <duv>
                         <label>アカウント権限</label>
-                        <?php echo $_POST['authority']; ?>
                         <select name = "authority"  required>
                             <option>一般</option>
                             <option>管理者</option>
                         </select>
                     </div>
-                    <div>
-                        <input type = "submit" name = "confirm" value ="確認する">
+                    <div class = "button">
+                        <button type = "submit" name = "confirm">確認する</button>
                     </div>
             </form>
         </main>

@@ -42,7 +42,7 @@
                 </div> 
                 <div>
                     <label>郵便番号</label>
-                    <?php echo $_POST['postalcode']; ?>
+                    <?php echo $_POST['postal_code']; ?>
                 </div>
                 <div>
                     <label>住所（都道府県）</label>
@@ -63,18 +63,6 @@
 
                 <form action = "registration.php">
                     <input type = "submit" class = "button1" value = "前に戻る">
-                    <input type = "hidden" value = "<?php echo $_POST['family_name']; ?>" name = "family_name">
-                    <input type = "hidden" value = "<?php echo $_POST['last_name']; ?>" name = "last_name">
-                    <input type = "hidden" value = "<?php echo $_POST['family_name_kana']; ?>" name = "family_name_kana">
-                    <input type = "hidden" value = "<?php echo $_POST['last_name_kana']; ?>" name = "last_name_kana">
-                    <input type = "hidden" value = "<?php echo $_POST['mail']; ?>" name = "mail">
-                    <input type = "hidden" value = "<?php echo $_POST['password']; ?>" name = "password">
-                    <input type = "hidden" value = "<?php echo $_POST['gender']; ?>" name = "gender">
-                    <input type = "hidden" value = "<?php echo $_POST['postalcode']; ?>" name = "postalcode">
-                    <input type = "hidden" value = "<?php echo $_POST['prefecture']; ?>" name = "prefecture">
-                    <input type = "hidden" value = "<?php echo $_POST['address_1']; ?>" name = "address_1">
-                    <input type = "hidden" value = "<?php echo $_POST['address_2']; ?>" name = "address_2">
-                    <input type = "hidden" value = "<?php echo $_POST['authority']; ?>" name = "authority">
                 </form>
                 <form action = "insert.php" method = "post">
                     <input type = "submit" class = "button2" value = "登録する">
@@ -85,7 +73,7 @@
                     <input type = "hidden" value = "<?php echo $_POST['mail']; ?>" name = "mail">
                     <input type = "hidden" value = "<?php echo $_POST['password']; ?>" name = "password">
                     <input type = "hidden" value = "<?php echo $_POST['gender']; ?>" name = "gender">
-                    <input type = "hidden" value = "<?php echo $_POST['postalcode']; ?>" name = "postalcode">
+                    <input type = "hidden" value = "<?php echo $_POST['postal_code']; ?>" name = "postalcode">
                     <input type = "hidden" value = "<?php echo $_POST['prefecture']; ?>" name = "prefecture">
                     <input type = "hidden" value = "<?php echo $_POST['address_1']; ?>" name = "address_1">
                     <input type = "hidden" value = "<?php echo $_POST['address_2']; ?>" name = "address_2">
