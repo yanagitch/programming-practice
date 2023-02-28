@@ -15,32 +15,32 @@
             <form method = "post" action = "confirm.php">
                 <div>
                     <label>名前（姓）</label>
-                    <input type = "text" pattern= "[\u4E00-\u9FFF\u3040-\u309F-]*" class = "text" size = "35" maxlength = "10" name = "family_name" required
+                    <input type = "text" pattern= "[\u4E00-\u9FFF\u3040-\u309F-]*" class = "text" size = "35" maxlength = "10" name = "family_name"
                     value = "<?php echo $_POST['family_name']; ?>">
                 </div>
                 <div>
                     <label>名前（名）</label>
-                    <input type = "text" pattern = "[\u4E00-\u9FFF\u3040-\u309F-]*" class = "text" size = "35" maxlength = "10" name = "last_name"  required
+                    <input type = "text" pattern = "[\u4E00-\u9FFF\u3040-\u309F-]*" class = "text" size = "35" maxlength = "10" name = "last_name"
                     value = "<?php echo $_POST['last_name']; ?>">
                 </div>
                 <div>
                     <label>カナ（姓）</label>
-                    <input type = "text" pattern="[\u30A1-\u30F6]*" class = "text" size = "35" maxlength = "10" name = "family_name_kana"  required
+                    <input type = "text" pattern="[\u30A1-\u30F6]*" class = "text" size = "35" maxlength = "10" name = "family_name_kana"
                     value = "<?php echo $_POST['family_name_kana']; ?>">
                 </div>
                 <div>
                     <label>カナ（名）</label>
-                    <input type = "text" pattern="[\u30A1-\u30F6]*" class = "text" size = "35" maxlength = "10" name = "last_name_kana"  required
+                    <input type = "text" pattern="[\u30A1-\u30F6]*" class = "text" size = "35" maxlength = "10" name = "last_name_kana"
                     value = "<?php echo $_POST['last_name_kana']; ?>">
                 </div>
                 <div>
                     <label>メールアドレス</label>
-                    <input type = "email"  class = "text" size = "35" maxlength = "100" name = "mail"  required
+                    <input type = "email"  class = "text" size = "35" maxlength = "100" name = "mail"
                     value = "<?php echo $_POST['mail']; ?>">
                 </div>
                 <div>
                     <label>パスワード</label>
-                    <input type = "password" pattern="^[0-9A-Za-z]+$" class = "text" size = "35" maxlength = "10" name = "password"  required
+                    <input type = "password" pattern="^[0-9A-Za-z]+$" class = "text" size = "35" maxlength = "10" name = "password"
                     value = "<?php echo $_POST['password']; ?>">
                 </div>
                 <div>
@@ -50,12 +50,12 @@
                 </div> 
                 <div>
                     <label>郵便番号</label>
-                    <input type = "text" pattern = "^[0-9A-Za-z]+$" class = "text" size = "25" maxlength = "7" name = "postal_code"  required
+                    <input type = "text" pattern = "^[0-9A-Za-z]+$" class = "text" size = "25" maxlength = "7" name = "postal_code"
                     value = "<?php echo $_POST['postal_code']; ?>">
                 </div>
                 <div>
                     <label>住所（都道府県）</label>
-                    <select required name = "prefecture"  required>
+                    <select name = "prefecture">
                         <option></option> <option>北海道</option>
                         <option>青森県</option> <option>岩手県</option>
                         <option>宮城県</option> <option>秋田県</option>
@@ -94,7 +94,7 @@
                     </div>
                     <duv>
                         <label>アカウント権限</label>
-                        <select name = "authority"  required>
+                        <select name = "authority">
                             <option>一般</option>
                             <option>管理者</option>
                         </select>

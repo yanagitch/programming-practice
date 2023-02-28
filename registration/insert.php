@@ -1,22 +1,20 @@
 <?php
     mb_internal_encoding("utf8");
-    $pdo = new PDO("mysql:dbname = registration; host = localhost;","root","root");
+    $pdo = new PDO("mysql:dbname=registration;host=localhost;","root","root");
 
-    $pdo->exec("insert into registration (family_name)
-        values('".$_POST['family_name']."');"
-    );
+    $pdo->exec("insert into registration (family_name,last_name,family_name_kana,last_name_kana,mail,password,gender)
+    values('".$_POST['family_name']."','".$_POST['last_name']."','".$_POST['family_name_kana']."','".$_POST['last_name_kana']."','".$_POST['mail']."','".$_POST['password']."','".$_POST['gender']."');");
 
-    var_dump($_POST['family_name']); 
-
+    var_dump ($_POST);
 ?>
 
 <!DOCTYPE html>
 <html lang = "ja">
 
     <head>
-        <meta charset = "utf-8">
+        <meta charset ="utf-8">
         <title>アカウント登録完了画面</title>
-        <link rel = "stylesheet" type = "text/css" href = "insert.css">
+        <link rel="stylesheet" type="text/css" href="insert.css">
     </head>
 
     <body>
