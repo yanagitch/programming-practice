@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+    <html lang="ja">
+        <head>
+            <meta charset="UTF-8">
+            <title>D.I.BLOG</title>
+            <link rel="stylesheet" type="text/css" href="d.i.blog.css">  
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+            <script>
+                $(document).ready(function(){
+                    $('.abc').bxSlider({
+                        auto:true,
+                        mode:'horizontal',
+                        speed: 2000,
+                        slideWidth: 500
+                    });
+                });
+            </script>
+        </head>
+        <body>
+            <header>
+                <div class="logo">
+                    <img src="/Applications/MAMP/htdocs/diworks_keijiban/diblog_logo.jpg">
+                </div>
+                    <div class="menu">
+                        <button>トップ</button>    
+                        <button>プロフィール</button>   
+                        <button>D.I.Blogについて</button>
+                        <button onclick="location.href='http://localhost/workspace/workspace-yanagi/programming-practice/registration/regist.php'">アカウント登録</button>    
+                        <button>問い合わせ</button>
+                        <button>その他</button>
+                    </div>
+
+            </header>
+            <main>
+                
+
+                <div class="left">
+                    <h1>プログラミングに役立つ書籍</h1>
+                    <p>2022年1月7日</p>
+                    <div class="abc">
+                        <div><img src="/Users/masahiroyanagi/Desktop/演習課題/04_Practice/jQuery_image1.jpg"></div>
+                        <div><img src="/Users/masahiroyanagi/Desktop/演習課題/04_Practice/jQuery_image2.jpg"></div>
+                        <div><img src="/Users/masahiroyanagi/Desktop/演習課題/04_Practice/jQuery_image3.jpg"></div>
+                        <div><img src="/Users/masahiroyanagi/Desktop/演習課題/04_Practice/jQuery_image4.jpg"></div>
+                        <div><img src="/Users/masahiroyanagi/Desktop/演習課題/04_Practice/jQuery_image5.jpg"></div>
+                    </div>
+
+                    <p>D.I.BlogはD.I.Worksが提供する演習課題です。</p>
+                    <p>記事中身</p>
+                    <div class="graybox">
+                        <div class="box_pic1">
+                            <img src="/Users/masahiroyanagi/Desktop/演習課題/03_Practice/pic1.jpg">
+                            <p>ドメイン修正方法</p> 
+                        </div>    
+                        <div class="box_pic1">
+                            <img src="/Users/masahiroyanagi/Desktop/演習課題/03_Practice/pic2.jpg">
+                            <p>快適な通信環境</p>
+                        </div>
+                        <div class="box_pic1">
+                            <img src="/Users/masahiroyanagi/Desktop/演習課題/03_Practice/pic3.jpg">
+                            <p>Linuxの基礎</p>
+                        </div>    
+                        <div class="box_pic1">
+                            <img src="/Users/masahiroyanagi/Desktop/演習課題/03_Practice/pic4.jpg">
+                            <p>マーケティング入門</p>
+                        </div>
+                        <div class="box_pic1">
+                            <img src="/Users/masahiroyanagi/Desktop/演習課題/03_Practice/pic5.jpg">
+                            <p>アクティブラーニング</p>
+                        </div>
+                        <div class="box_pic1">
+                            <img src="/Users/masahiroyanagi/Desktop/演習課題/03_Practice/pic6.jpg">
+                            <p>CSSの効率的な動作方法</p>
+                        </div>
+                        <div class="box_pic1">
+                            <img src="/Users/masahiroyanagi/Desktop/演習課題/03_Practice/pic7.jpg">
+                            <p>リーダブルコードとは</p>
+                        </div>
+                        <div class="box_pic1">
+                            <img src="/Users/masahiroyanagi/Desktop/演習課題/03_Practice/pic8.jpg">
+                            <p>HTML5の可視性</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <h3>人気の記事</h3>    
+                    <p>PHPオススメ本</p>    
+                    <p>PHP MyAdminの使い方</p>
+                    <p>今人気のエディタTops</p>
+                    <p>HTMLの基礎</p>
+
+                    <h3>オススメリンク</h3>
+                    <p>ディーアイワークス株式会社</p>
+                    <p>EXAMPPのダウンロード</p>
+                    <p>Ecllipseのダウンロード</p>
+                    <p>Braketsのダウンロード</p>
+
+                    <h3>カテゴリ</h3>
+                    <p>HTML</p>    
+                    <p>PHP</p>    
+                    <p>MySQL</p>    
+                    <p>JavaScript</p>    
+                </div>
+
+            </main>
+            <footer>
+                copyright(c) all right reserved diworks 2015-2018 
+            </footer>
+
+        </body>
+</html>

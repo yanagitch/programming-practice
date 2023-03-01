@@ -4,8 +4,9 @@ body{
 
 header{
     background-color: black;
+    border: solid black 3px;
     color: white;
-    width: 70%;
+    width: 60%;
     height: 45px;
     line-height: 40px;
 }
@@ -13,25 +14,34 @@ header{
 main{
     border: solid;
     background-color:aliceblue;
-    width: 70%;
-    height: 500px;
+    width: 60%;
 }
 
 h3{
     text-align: left;
-    margin-left: 30px;
+    margin-left: 60px;
     font-size: smaller;
 }
 
-p{
-    margin-top: 150px;
-    margin-bottom: 180px;
-    font-size: larger;
-    font-weight: bold;
-
+form{
+    display: inline-block;
+    margin-bottom: 20px;
 }
 
-form{
+input.button1{
+    background-color: white;
+    padding: 10px 50px;
+    border-radius: 5px;
+    font-family: monospace;
+    margin: 10px 30px;
+}
+
+input.button2{
+    background-color: white;
+    padding: 10px 50px;
+    border-radius: 5px;
+    font-family: monospace;
+    margin: 10px 30px;
 }
 
 div{
@@ -48,11 +58,13 @@ footer{
     background-color: black;
     color: white;
     text-align: center;
-    width: 70%;
+    width: 60%;
     height: 45px;
     line-height: 40px;
+    border: solid black 3px;
 }
 
+
 button{
-    margin-top: 20px;
+
 }

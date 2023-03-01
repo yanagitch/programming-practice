@@ -1,0 +1,77 @@
+header{
+
+}
+
+.menu{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    text-align: center;
+    
+}
+button{
+    margin-top: 20px;
+    margin-right: 30px;
+    padding: 5px 10px;
+    background-color: grey;
+    color: white;
+    border-radius: 5px;
+}
+main{
+    clear: left;
+}
+.left{
+    width: 60%px;
+    height: 1076px;
+    float: left;
+    border: solid red;
+}
+h1{
+    margin-top:10px;
+    border-left: 8px solid;
+    border-bottom: 4px solid;
+}
+.mainimage{
+    width: 800px;
+}
+.graybox{
+    width: 800px;
+    background-color: lightgray;
+    text-align: center;
+}
+.box_pic1{
+    text-align: center;
+    background-color: lightgray;
+}
+.graybox img{
+    width: 170px;
+    margin: 20px 10px -10px 20px;
+}
+.graybox .box_pic1{
+    float: left;
+}
+.right{
+    width: 39%;
+    height: 1076px;
+    margin-left: auto;
+    border: solid blue;
+    float: left;
+}
+h3{
+    border-bottom: 3px solid lightgray;
+}
+.right p{
+    margin-left: 15px;
+}
+footer{
+    clear: left;
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    bottom: 0;
+    left: 0px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    line-height: 60px;
+}

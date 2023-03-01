@@ -4,7 +4,7 @@
     <head>
         <meta charset = "utf-8">
         <title>アカウント登録</title>
-        <link rel = "stylesheet" type = "text/css" href = "confirm.css">
+        <link rel = "stylesheet" type = "text/css" href = "regist_confirm.css">
     </head>
 
     <body>
@@ -38,7 +38,11 @@
                 </div>
                 <div>
                     <label>性別</label>
-                    <?php echo $_POST['gender']; ?>
+                    <?php if($_POST['gender']==="0"){
+                        echo "男";
+                    }elseif($_POST['gender']==="1"){
+                        echo "女";
+                    } ?>
                 </div> 
                 <div>
                     <label>郵便番号</label>
@@ -58,10 +62,14 @@
                 </div>
                 <div>
                     <label>アカウント権限</label>
-                    <?php echo $_POST['authority']; ?>
+                    <?php if($_POST['authority']==="0"){
+                        echo "一般";
+                    }elseif($_POST['authority']==="1"){
+                        echo "管理者";
+                    }; ?>
                 </div>
 
-                <form action = "registration.php" method = "post">
+                <form action = "regist.php" method = "post">
                     <input type = "submit" class = "button1" value = "前に戻る">
                     <input type = "hidden" value = "<?php echo $_POST['family_name']; ?>" name = "family_name">
                     <input type = "hidden" value = "<?php echo $_POST['last_name']; ?>" name = "last_name">
@@ -76,7 +84,7 @@
                     <input type = "hidden" value = "<?php echo $_POST['address_2']; ?>" name = "address_2">
                     <input type = "hidden" value = "<?php echo $_POST['authority']; ?>" name = "authority">
                 </form>
-                <form action = "insert.php" method = "post">
+                <form action = "regist_complete.php" method = "post">
                     <input type = "submit" class = "button2" value = "登録する">
                     <input type = "hidden" value = "<?php echo $_POST['family_name']; ?>" name = "family_name">
                     <input type = "hidden" value = "<?php echo $_POST['last_name']; ?>" name = "last_name">
