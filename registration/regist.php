@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
         <meta charset = "utf-8">
         <title>アカウント登録</title>
@@ -13,12 +14,12 @@
                 <div>
                     <div>
                         <label>名前（姓）</label>
-                        <input type = "text" pattern= "[\u4E00-\u9FFF\u3040-\u309F-]*" class = "text" size = "35" maxlength = "10" name = "family_name"
-                        value = "<?php echo $_POST['family_name']; ?>">
+                        <input type = "text" pattern= "[\u4E00-\u9FFF\u3040-\u309F]*" class = "text" size = "35" maxlength = "10" name = "family_name"
+                        value = "<?php echo $_POST['family_name']?>">
                     </div>
                     <div>
                         <label>名前（名）</label>
-                        <input type = "text" pattern = "[\u4E00-\u9FFF\u3040-\u309F-]*" class = "text" size = "35" maxlength = "10" name = "last_name"
+                        <input type = "text" pattern = "[\u4E00-\u9FFF\u3040-\u309F]*" class = "text" size = "35" maxlength = "10" name = "last_name"
                         value = "<?php echo $_POST['last_name']; ?>">
                     </div>
                     <div>
@@ -33,12 +34,12 @@
                     </div>
                     <div>
                         <label>メールアドレス</label>
-                        <input type = "email"  class = "text" size = "35" maxlength = "100" name = "mail"
+                        <input type = "text"  pattern="[\d@-]*" class = "text" size = "35" maxlength = "100" name = "mail"
                         value = "<?php echo $_POST['mail']; ?>">
                     </div>
                     <div>
                         <label>パスワード</label>
-                        <input type = "password" pattern="^[0-9A-Za-z]+$" class = "text" size = "35" maxlength = "10" name = "password"
+                        <input type = "password" pattern="[\w]*" class = "text" size = "35" maxlength = "10" name = "password"
                         value = "<?php echo $_POST['password']; ?>">
                     </div>
                     <div>
@@ -48,7 +49,7 @@
                     </div> 
                     <div>
                         <label>郵便番号</label>
-                        <input type = "text" pattern = "^[0-9A-Za-z]+$" class = "text" size = "25" maxlength = "7" name = "postal_code"
+                        <input type = "text" pattern = "[\d]*" class = "text" size = "25" maxlength = "7" name = "postal_code"
                         value = "<?php echo $_POST['postal_code']; ?>">
                     </div>
                     <div>
@@ -82,12 +83,12 @@
                     </div>
                         <div>
                             <label>住所（市区町村)</label>
-                            <input type = "text" pattern = "[\u4E00-\u9FFF\u30A1-\u30FF\u3041-\u309F\0-9\-\ ]"class = "text" size = "35" maxlength = "10" name = "address_1"
+                            <input type = "text" pattern = "[^\x01-\x7E-\u4E00-\u9FFF\u3040-\u309F-\u30A1-\u30F6-\d ]*" class = "text" size = "35" maxlength = "10" name = "address_1"
                             value = "<?php echo $_POST['address_1']; ?>">
                         </div>
                         <div>
                             <label>住所（番地）</label>
-                            <input type = "text" pattern = "[\u4E00-\u9FFF\u30A1-\u30FF\u3041-\u309F\0-9\-\ ]" class = "text" size = "35" maxlength = "100" name = "address_2"
+                            <input type = "text" pattern = "[^\x01-\x7E-\u4E00-\u9FFF\u3040-\u309F-\u30A1-\u30F6-\d ]*" class = "text" size = "35" maxlength = "100" name = "address_2"
                             value = "<?php echo $_POST['address_2']; ?>">
                         </div>
                         <duv>
