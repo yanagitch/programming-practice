@@ -1,7 +1,6 @@
 body{
     text-align: -webkit-center;
 }
-
 header{
     background-color: black;
     border: solid black 3px;
@@ -10,24 +9,20 @@ header{
     height: 45px;
     line-height: 40px;
 }
-
 main{
     border: solid;
     background-color:aliceblue;
     width: 60%;
 }
-
 h3{
     text-align: left;
     margin-left: 60px;
     font-size: smaller;
 }
-
 form{
     display: inline-block;
     margin-bottom: 20px;
 }
-
 input.button1{
     background-color: white;
     padding: 10px 50px;
@@ -35,7 +30,6 @@ input.button1{
     font-family: monospace;
     margin: 10px 30px;
 }
-
 input.button2{
     background-color: white;
     padding: 10px 50px;
@@ -43,17 +37,14 @@ input.button2{
     font-family: monospace;
     margin: 10px 30px;
 }
-
 div{
     text-align: center;
     margin-bottom: 20px;
 
 }
-
 label{
     margin-right: 25px;
 }
-
 footer{
     background-color: black;
     color: white;
@@ -62,9 +53,4 @@ footer{
     height: 45px;
     line-height: 40px;
     border: solid black 3px;
-}
-
-
-button{
-
 }
