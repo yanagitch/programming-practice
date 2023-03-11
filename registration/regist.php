@@ -34,7 +34,7 @@
                     </div>
                     <div style="display:flex; justify-cocntent:space-between;">
                         <label style="margin-right:15px;">メールアドレス</label>
-                        <input type = "text"  pattern="[\d\@-]*" class = "email" size = "35" maxlength = "100" name = "mail"
+                        <input type = "text"  pattern="[a-zA-Z\0-9\@-]*" class = "email" size = "35" maxlength = "100" name = "mail"
                         value = "<?php echo $_POST['mail']; ?>" required>
                     </div>
                     <div style="display:flex; justify-cocntent:space-between;">
@@ -85,12 +85,12 @@
                     </div>
                         <div style="display:flex; justify-cocntent:space-between;">
                             <label>住所（市区町村)</label>
-                            <input type = "text" pattern = "[０-９\u4E00-\u9FFF\u3040-\u309F-\u30A1-\u30F6-\d ]*" class = "text" size = "35" maxlength = "10" name = "address_1"
+                            <input type = "text" pattern = "[０-９\u4E00-\u9FFF\u3040-\u309F-\u30A1-\u30F6-\d ー　]*" class = "text" size = "35" maxlength = "10" name = "address_1"
                             value = "<?php echo $_POST['address_1']; ?>" style="margin-left:-12px;" required>
                         </div>
                         <div style="display:flex; justify-cocntent:space-between;">
                             <label>住所（番地）</label>
-                            <input type = "text" pattern = "[０-９\u4E00-\u9FFF\u3040-\u309F-\u30A1-\u30F6-\d ]*" class = "text" size = "35" maxlength = "100" name = "address_2"
+                            <input type = "text" pattern = "[０-９\u4E00-\u9FFF\u3040-\u309F-\u30A1-\u30F6-\d ー　]*" class = "text" size = "35" maxlength = "100" name = "address_2"
                             value = "<?php echo $_POST['address_2']; ?>" style="margin-left:9px;" required>
                         </div>
                         <duv style="display:flex; justify-cocntent:space-between;">
